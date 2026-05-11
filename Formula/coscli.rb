@@ -8,20 +8,20 @@ class Coscli < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/mtane0412/coscli/releases/download/v#{version}/cos-darwin-arm64"
-      sha256 "7aaf8a6cd479780025e310fddb8b0fbd95eee0441dfbd2d6ea639add161275be"
+      sha256 "fe85e7dd77dc58499211eb4a29a4c832a3048548889c6c843597c43941702b9e"
     else
       url "https://github.com/mtane0412/coscli/releases/download/v#{version}/cos-darwin-x64"
-      sha256 "9e4d3cd91548637c608c64157e7ca40527af84c0a5ca5b1772e44b2b0f8203aa"
+      sha256 "b1e21c1ae067ed742cc7829e5d19a42b0de0540d0cd4870c7f22f9d902cf6665"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/mtane0412/coscli/releases/download/v#{version}/cos-linux-arm64"
-      sha256 "29329773a9907e8d0944221883aab813a63b094df16a7eed9f3d059bede64bff"
+      sha256 "fd4ca902c77b2a0a14dd4aa754604b78432e505dfbbefcbdea90acbe1628c9a8"
     else
       url "https://github.com/mtane0412/coscli/releases/download/v#{version}/cos-linux-x64"
-      sha256 "0ca54ecf3c0cb61c2109e3b7937777b9c1a573c6e87208a63836ecaed5e30525"
+      sha256 "6a6549f05bdac0fbb75b5ceb64154f1cd705a1216826882968a0774236dd3778"
     end
   end
 
