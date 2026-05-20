@@ -3,25 +3,25 @@
 class Coscli < Formula
   desc "AI エージェント親和的 Cosense (Scrapbox) CLI"
   homepage "https://github.com/mtane0412/coscli"
-  version "0.5.0"
+  version "0.6.0"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/mtane0412/coscli/releases/download/v#{version}/cos-darwin-arm64"
-      sha256 "33361f24b155da1c45a1436bfc3d2d420549293dabee275201a2484871b4dbdb"
+      sha256 "c4d65e1c99a5acef4076710dc5ea12f10cdd452cbb15e4959f352ebad36377d3"
     else
       url "https://github.com/mtane0412/coscli/releases/download/v#{version}/cos-darwin-x64"
-      sha256 "9c513eb3e4e2b41ae63898c2c7d11b95eeeac60c4dd184747cfb05591d19d366"
+      sha256 "ac70318b1aea9fbf626b4d650ce5f6bfb2bd1a86cb5ca40ee12a9f3433ce0213"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/mtane0412/coscli/releases/download/v#{version}/cos-linux-arm64"
-      sha256 "318a58fc6f02979befb870b95e7c694a320c4706c9a8e2a302aec4cd774b5009"
+      sha256 "0e3b8ea8eef9664652dd72153c88f5eeb5619d3cd2e525f8542371a39af3e68e"
     else
       url "https://github.com/mtane0412/coscli/releases/download/v#{version}/cos-linux-x64"
-      sha256 "c3626a26d8b40bb30e97c8716a5d1f2b2cf81b5d79b2372568e6bb4049161b55"
+      sha256 "1dfc49a926d76b36712c193661516a6284b3567053931081ed8457e4568a8a4b"
     end
   end
 
